@@ -129,3 +129,102 @@ img {
 .navegacion__lista a:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* ===========================
+   SECCIONES GENERALES
+   =========================== */
+main section,
+main aside {
+  padding: var(--espaciado-md);
+}
+
+main h2 {
+  font-size: 1.1rem;
+  margin-bottom: var(--espaciado-sm);
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-secundario);
+  padding-bottom: var(--espaciado-xs);
+}
+
+/* ===========================
+   RESUMEN - INDICADORES (Flexbox)
+   =========================== */
+.resumen__indicadores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-sm);
+}
+
+.indicador {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-sm);
+  flex: 1 1 40%;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.indicador__valor {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.indicador__etiqueta {
+  font-size: 0.85rem;
+  color: var(--color-texto-claro);
+}
+
+.indicador--grande {
+  flex-basis: 100%;
+}
+
+.indicador--alerta .indicador__valor {
+  color: var(--color-critico);
+}
+
+/* ===========================
+   MISIONES (tarjetas)
+   =========================== */
+.misiones__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.mision {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-sm);
+  border-left: 6px solid var(--color-texto-claro);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3 {
+  font-size: 1rem;
+  margin-bottom: var(--espaciado-xs);
+}
+
+.mision p {
+  font-size: 0.9rem;
+  color: var(--color-texto-claro);
+}
+
+/* Los estados se distinguen por color de borde Y por el texto en <strong>,
+   nunca solo por color, para cumplir con accesibilidad */
+.mision--en-progreso {
+  border-left-color: var(--color-info);
+}
+
+.mision--pendiente {
+  border-left-color: var(--color-advertencia);
+}
+
+.mision--completada {
+  border-left-color: var(--color-exito);
+}
+
+.mision--suspendida {
+  border-left-color: var(--color-critico);
+}
