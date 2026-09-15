@@ -228,3 +228,124 @@ main h2 {
 .mision--suspendida {
   border-left-color: var(--color-critico);
 }
+
+/* ===========================
+   EQUIPOS CIENTIFICOS (Flexbox)
+   =========================== */
+.equipos__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.equipo {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-sm);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.equipo h3 {
+  color: var(--color-secundario);
+  margin-bottom: var(--espaciado-xs);
+}
+
+.equipo p {
+  font-size: 0.9rem;
+  color: var(--color-texto-claro);
+}
+
+/* ===========================
+   ALERTAS (jerarquia visual clara)
+   =========================== */
+.alertas {
+  background-color: #fff;
+}
+
+.alertas__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+}
+
+.alerta {
+  padding: var(--espaciado-sm);
+  border-radius: var(--radio-borde);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.alerta::before {
+  position: absolute;
+  left: var(--espaciado-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+/* Alerta critica: la mas importante visualmente, con icono de texto */
+.alerta--critica {
+  background-color: var(--color-critico-fondo);
+  color: var(--color-critico);
+  font-weight: bold;
+  border: 2px solid var(--color-critico);
+}
+
+.alerta--critica::before {
+  content: "!!";
+}
+
+.alerta--advertencia {
+  background-color: var(--color-advertencia-fondo);
+  color: #5c4200;
+  border: 1px solid var(--color-advertencia);
+}
+
+.alerta--advertencia::before {
+  content: "!";
+}
+
+.alerta--info {
+  background-color: var(--color-info-fondo);
+  color: var(--color-info);
+}
+
+.alerta--info::before {
+  content: "i";
+}
+
+/* ===========================
+   AGENDA
+   =========================== */
+.agenda__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+}
+
+.agenda__lista li {
+  background-color: var(--color-superficie);
+  padding: var(--espaciado-xs) var(--espaciado-sm);
+  border-radius: var(--radio-borde);
+  font-size: 0.9rem;
+  display: flex;
+  gap: var(--espaciado-xs);
+}
+
+.agenda__lista time {
+  font-weight: bold;
+  color: var(--color-primario);
+  min-width: 3.5rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.pie {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: var(--espaciado-sm);
+  font-size: 0.85rem;
+}
