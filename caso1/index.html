@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Control - Expedicion Bosque Nuboso 2026</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1>Expedicion Bosque Nuboso 2026</h1>
+    <p class="encabezado__meta">
+      Estacion Biologica Monteverde - Dia 4 de 7 -
+      <span class="estado estado--activo">Operaciones activas</span>
+    </p>
+  </header>
+
+  <nav class="navegacion" aria-label="Navegacion principal">
+    <ul class="navegacion__lista">
+      <li><a href="#resumen">Resumen</a></li>
+      <li><a href="#misiones">Misiones</a></li>
+      <li><a href="#equipos">Equipos</a></li>
+      <li><a href="#alertas">Alertas</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="resumen" class="resumen" aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen de operaciones</h2>
+      <div class="resumen__indicadores">
+        <article class="indicador indicador--grande">
+          <p class="indicador__valor">14</p>
+          <p class="indicador__etiqueta">Investigadores activos</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador__valor">5</p>
+          <p class="indicador__etiqueta">Misiones en progreso</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador__valor">8</p>
+          <p class="indicador__etiqueta">Misiones completadas</p>
+        </article>
+        <article class="indicador indicador--alerta">
+          <p class="indicador__valor">3</p>
+          <p class="indicador__etiqueta">Alertas pendientes</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="misiones" class="misiones" aria-labelledby="misiones-titulo">
+      <h2 id="misiones-titulo">Misiones activas</h2>
+      <ul class="misiones__lista">
+        <li class="mision mision--en-progreso">
+          <h3>Monitoreo de anfibios</h3>
+          <p>Equipo Biologia - Sendero Norte - 08:30 a 11:30</p>
+          <p>Prioridad alta - <strong>Estado: En progreso</strong></p>
+        </li>
+        <li class="mision mision--pendiente">
+          <h3>Muestreo de agua del rio</h3>
+          <p>Equipo Hidrologia - Rio Guacimal - 09:00 a 12:00</p>
+          <p>Prioridad media - <strong>Estado: Pendiente</strong></p>
+        </li>
+        <li class="mision mision--completada">
+          <h3>Registro de estacion meteorologica</h3>
+          <p>Equipo Meteorologia - Torre Norte - 06:00 a 07:00</p>
+          <p>Prioridad baja - <strong>Estado: Completada</strong></p>
+        </li>
+        <li class="mision mision--suspendida">
+          <h3>Toma de muestras de suelo</h3>
+          <p>Equipo Geologia - Sendero Sur - 10:00 a 13:00</p>
+          <p>Prioridad media - <strong>Estado: Suspendida</strong></p>
+        </li>
+        <li class="mision mision--en-progreso">
+          <h3>Conteo de aves</h3>
+          <p>Equipo Biologia - Mirador Este - 07:00 a 10:00</p>
+          <p>Prioridad alta - <strong>Estado: En progreso</strong></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="equipos" class="equipos" aria-labelledby="equipos-titulo">
+      <h2 id="equipos-titulo">Equipos cientificos</h2>
+      <ul class="equipos__lista">
+        <li class="equipo">
+          <h3>Biologia</h3>
+          <p>4 integrantes - Mision actual: Monitoreo de anfibios</p>
+          <p>Estado: Activo - Proxima actividad: Conteo de aves (07:00)</p>
+        </li>
+        <li class="equipo">
+          <h3>Hidrologia</h3>
+          <p>3 integrantes - Mision actual: Muestreo de agua del rio</p>
+          <p>Estado: Activo - Proxima actividad: Analisis de laboratorio (13:00)</p>
+        </li>
+        <li class="equipo">
+          <h3>Meteorologia</h3>
+          <p>2 integrantes - Mision actual: Registro de estacion</p>
+          <p>Estado: En pausa - Proxima actividad: Revision de sensores (15:00)</p>
+        </li>
+        <li class="equipo">
+          <h3>Geologia</h3>
+          <p>3 integrantes - Mision actual: Toma de muestras de suelo</p>
+          <p>Estado: Suspendido - Proxima actividad: Retomar manana</p>
+        </li>
+      </ul>
+    </section>
+
+    <aside id="alertas" class="alertas" aria-labelledby="alertas-titulo">
+      <h2 id="alertas-titulo">Alertas</h2>
+      <ul class="alertas__lista">
+        <li class="alerta alerta--critica">
+          <strong>Critica:</strong> Sensor meteorologico sin conexion en Torre Norte.
+        </li>
+        <li class="alerta alerta--critica">
+          <strong>Critica:</strong> Lluvia intensa en el sector norte.
+        </li>
+        <li class="alerta alerta--advertencia">
+          <strong>Advertencia:</strong> Retraso de 30 minutos en Muestreo de agua del rio.
+        </li>
+        <li class="alerta alerta--info">
+          <strong>Informativa:</strong> Nivel de bateria bajo en equipo remoto de Geologia.
+        </li>
+      </ul>
+    </aside>
+
+    <section id="agenda" class="agenda" aria-labelledby="agenda-titulo">
+      <h2 id="agenda-titulo">Proximas actividades</h2>
+      <ol class="agenda__lista">
+        <li><time>11:30</time> - Cierre de Monitoreo de anfibios - Equipo Biologia</li>
+        <li><time>12:00</time> - Cierre de Muestreo de agua del rio - Equipo Hidrologia</li>
+        <li><time>13:00</time> - Analisis de laboratorio - Equipo Hidrologia</li>
+        <li><time>15:00</time> - Revision de sensores meteorologicos - Equipo Meteorologia</li>
+        <li><time>17:00</time> - Reunion general de coordinacion - Todos los equipos</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Expedicion Bosque Nuboso 2026 - Estacion Biologica Monteverde</p>
+  </footer>
+
+</body>
+</html>
