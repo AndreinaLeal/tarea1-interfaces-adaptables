@@ -63,3 +63,69 @@ img {
   height: auto;
   display: block;
 }
+
+/* ===========================
+   HEADER
+   =========================== */
+.encabezado {
+  background-color: var(--color-primario);
+  color: white;
+  padding: var(--espaciado-md);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.encabezado h1 {
+  font-size: 1.25rem;
+  margin-bottom: var(--espaciado-xs);
+}
+
+.encabezado__meta {
+  font-size: 0.9rem;
+  color: #d8f3dc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaciado-xs);
+}
+
+.estado {
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radio-borde);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.estado--activo {
+  background-color: var(--color-exito);
+  color: white;
+}
+
+/* ===========================
+   NAVEGACION (Flexbox)
+   =========================== */
+.navegacion {
+  background-color: var(--color-secundario);
+}
+
+.navegacion__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-xs);
+  padding: var(--espaciado-sm);
+}
+
+.navegacion__lista a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radio-borde);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navegacion__lista a:hover,
+.navegacion__lista a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
