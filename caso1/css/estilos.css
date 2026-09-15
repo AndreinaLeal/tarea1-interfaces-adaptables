@@ -349,3 +349,72 @@ main h2 {
   padding: var(--espaciado-sm);
   font-size: 0.85rem;
 }
+
+/* ===========================
+   TABLET: 601px en adelante
+   =========================== */
+@media (min-width: 601px) {
+  .resumen__indicadores {
+    flex-wrap: nowrap;
+  }
+
+  .indicador {
+    flex: 1 1 0;
+  }
+
+  .indicador--grande {
+    flex-basis: auto;
+  }
+
+  .equipos__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+
+  .agenda__lista li {
+    font-size: 1rem;
+  }
+}
+
+/* ===========================
+   ESCRITORIO: 1024px en adelante
+   Estructura principal con CSS Grid
+   =========================== */
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "resumen  resumen"
+      "misiones alertas"
+      "equipos  agenda";
+    gap: var(--espaciado-md);
+    padding: var(--espaciado-md);
+  }
+
+  main section,
+  main aside {
+    padding: 0;
+  }
+
+  #resumen { grid-area: resumen; }
+  #misiones { grid-area: misiones; }
+  #alertas { grid-area: alertas; }
+  #equipos { grid-area: equipos; }
+  #agenda { grid-area: agenda; }
+
+  .equipos__lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .misiones__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+
+  .navegacion__lista {
+    justify-content: center;
+  }
+}
