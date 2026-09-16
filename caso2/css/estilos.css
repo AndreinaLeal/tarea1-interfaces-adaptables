@@ -106,3 +106,67 @@ img {
 .navegacion__lista a:focus {
   background-color: rgba(255, 255, 255, 0.25);
 }
+
+/* ===========================
+   SECCIONES GENERALES
+   =========================== */
+main section {
+  padding: var(--espaciado-md) var(--espaciado-sm);
+}
+
+main h2 {
+  font-size: 1.1rem;
+  margin-bottom: var(--espaciado-sm);
+  color: var(--color-primario);
+}
+
+main h3 {
+  font-size: 1rem;
+}
+
+/* ===========================
+   SECCION "AHORA" (la mas importante en telefono)
+   =========================== */
+.ahora {
+  background-color: var(--color-ahora-fondo);
+}
+
+.ahora__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.actividad-ahora {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-sm);
+  padding-top: 2rem;
+  position: relative;
+  border: 2px solid var(--color-ahora);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actividad-ahora h3 {
+  margin-bottom: var(--espaciado-xs);
+}
+
+.actividad-ahora p {
+  font-size: 0.9rem;
+  color: var(--color-texto-claro);
+}
+
+/* Etiqueta "En este momento" superpuesta con position: absolute,
+   dentro de un contenedor con position: relative (.actividad-ahora) */
+.etiqueta-ahora {
+  position: absolute;
+  top: -0.6rem;
+  left: var(--espaciado-sm);
+  background-color: var(--color-ahora);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radio-borde);
+  text-transform: uppercase;
+}
