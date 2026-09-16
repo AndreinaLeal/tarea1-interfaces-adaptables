@@ -143,7 +143,6 @@ cambiar toda la paleta de colores del Caso 2 editando solo dos líneas, sin toca
 resto del CSS.
 
 ## Resumen de commits
-## Resumen de commits
 
 | # | Fecha | Hash | Mensaje | Caso | Cambio |
 |---|------------|---------|---------------------------------------------------------------------------------------------------------------------|--------|------------------------------------------------|
@@ -160,4 +159,5 @@ resto del CSS.
 | 11 | 2026-09-15 | 49233af | Agregar estilos de la seccion Ahora con position absolute para la etiqueta destacada | Caso 2 | Seccion Ahora con position absolute |
 | 12 | 2026-09-15 | 372bd33 | Agregar estilos de proximas actividades, escenarios, cambios y servicios del Caso 2 | Caso 2 | Proximas, escenarios, cambios y servicios |
 | 13 | 2026-09-15 | 1d49338 | Ajustar paleta de colores del Caso 2: celeste claro y amarillo crema con buen contraste | Caso 2 | Ajuste de paleta de colores |
-| 14 | 2026-09-16 | (pendiente) | Agregar README.md completo con decisiones de diseño y tabla de commits | Ambos | Documentación completa del repositorio |
+| 14 | 2026-09-16 | 6ca4604 | Agregar README.md completo con decisiones de diseño y tabla de commits | Ambos | Documentación completa del repositorio |
+| 15 | 2026-09-16 | e6d0710 | Eliminar archivo generado por error | Ambos | Limpieza de archivo accidental en el repositorio |
