@@ -2,8 +2,8 @@
    VARIABLES CSS
    =========================== */
 :root {
-  --color-primario: #6a1b9a;
-  --color-secundario: #ff6f00;
+  --color-primario: #4fc3f7;
+  --color-secundario: #f0dfa8;
   --color-fondo: #fdfaf6;
   --color-superficie: #ffffff;
   --color-texto: #1c1c1c;
@@ -97,14 +97,14 @@ img {
   white-space: nowrap;
   padding: 0.4rem 0.8rem;
   border-radius: var(--radio-borde);
-  color: white;
+  color: #4a3c1a;
   font-size: 0.85rem;
   font-weight: 600;
 }
 
 .navegacion__lista a:hover,
 .navegacion__lista a:focus {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ===========================
@@ -281,4 +281,76 @@ main h3 {
   text-align: center;
   padding: var(--espaciado-sm);
   font-size: 0.85rem;
+}
+
+/* ===========================
+   TABLET: 601px en adelante
+   =========================== */
+@media (min-width: 601px) {
+  .navegacion__lista {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ahora__lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .actividad-ahora {
+    flex: 1 1 45%;
+  }
+
+  .programacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+
+  .servicios__lista li {
+    flex: 0 1 auto;
+  }
+}
+
+/* ===========================
+   ESCRITORIO: 1024px en adelante
+   Reorganizacion real del layout
+   =========================== */
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "ahora     cambios"
+      "programacion cambios"
+      "programacion servicios"
+      "proximas  servicios";
+    gap: var(--espaciado-md);
+    padding: var(--espaciado-md);
+  }
+
+  main section {
+    padding: 0;
+  }
+
+  #ahora { grid-area: ahora; }
+  #programacion { grid-area: programacion; }
+  #cambios { grid-area: cambios; }
+  #servicios { grid-area: servicios; }
+  #proximas { grid-area: proximas; }
+
+  .programacion {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .ahora__lista {
+    flex-wrap: nowrap;
+  }
+
+  .navegacion__lista {
+    justify-content: flex-start;
+    padding-left: var(--espaciado-md);
+  }
 }
