@@ -170,3 +170,115 @@ main h3 {
   border-radius: var(--radio-borde);
   text-transform: uppercase;
 }
+
+/* ===========================
+   PROXIMAS ACTIVIDADES
+   =========================== */
+.proximas__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+}
+
+.proximas__lista li {
+  background-color: var(--color-superficie);
+  padding: var(--espaciado-xs) var(--espaciado-sm);
+  border-radius: var(--radio-borde);
+  font-size: 0.9rem;
+  display: flex;
+  gap: var(--espaciado-xs);
+  align-items: center;
+}
+
+.proximas__lista time {
+  font-weight: bold;
+  color: var(--color-primario);
+  min-width: 3.2rem;
+}
+
+/* ===========================
+   PROGRAMACION POR ESCENARIOS
+   (mobile: una columna. Grid real se activa en escritorio)
+   =========================== */
+.programacion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.escenario {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado-sm);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.escenario h3 {
+  color: var(--color-secundario);
+  margin-bottom: var(--espaciado-xs);
+  border-bottom: 2px solid var(--color-secundario);
+  padding-bottom: var(--espaciado-xs);
+}
+
+.escenario ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.escenario li {
+  font-size: 0.85rem;
+}
+
+.escenario time {
+  font-weight: bold;
+  margin-right: var(--espaciado-xs);
+}
+
+/* ===========================
+   CAMBIOS IMPORTANTES
+   =========================== */
+.cambios__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+}
+
+.cambio {
+  background-color: var(--color-cambio-fondo);
+  color: var(--color-cambio);
+  border-left: 5px solid var(--color-cambio);
+  padding: var(--espaciado-sm);
+  border-radius: var(--radio-borde);
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   SERVICIOS (Flexbox)
+   =========================== */
+.servicios__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-xs);
+}
+
+.servicios__lista li {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radio-borde);
+  font-size: 0.85rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.pie {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: var(--espaciado-sm);
+  font-size: 0.85rem;
+}
